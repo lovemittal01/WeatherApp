@@ -7,8 +7,8 @@ const PORT = process.env.PORT || 3000
 
 
 const app = express()
-
-//Define paths for express config
+console.log('__dirname', __dirname)
+    //Define paths for express config
 const viewsPath = path.join(__dirname, '../templates/views')
 const partialsPath = path.join(__dirname, '../templates/partials')
 
