@@ -5,11 +5,12 @@ const geocode = require('./utils/geocode')
 const forecast = require('./utils/forecast')
 const PORT = process.env.PORT || 3000
 
+console.log('Madhvi ', __dirname)
 
 const app = express()
     //Define paths for express config
-const viewsPath = path.join(__dirname, '../../templates/views')
-const partialsPath = path.join(__dirname, '../../templates/partials')
+const viewsPath = path.join(__dirname, '../templates/views')
+const partialsPath = path.join(__dirname, '../templates/partials')
 
 //Setup static directory to serve
 app.use(express.static(path.join(__dirname, '../public')))
