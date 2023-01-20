@@ -6,6 +6,7 @@ const forecast = require('./utils/forecast')
 const PORT = process.env.PORT || 3000
 
 console.log('Madhvi ', __dirname)
+console.log('hello')
 
 const app = express()
     //Define paths for express config
